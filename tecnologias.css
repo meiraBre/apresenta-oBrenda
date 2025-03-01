@@ -43,6 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; /* Centraliza o conteúdo na tela */
+    flex-direction: column; /* Alinha tudo de forma vertical */
     padding-top: 80px; /* Para garantir que o header não cubra o conteúdo */
 }
 main {
@@ -65,7 +66,7 @@ main img {
     max-width: 600px;
     margin-bottom: 30px;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5); /* Fundo preto com 50% de opacidade */
+    background: rgba(0, 0, 0, 0.9); /* Fundo preto com 80% de opacidade */
     padding: 20px;
     border-radius: 10px;
     margin: 30px;
@@ -79,7 +80,8 @@ main img {
 .tech {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas de no mínimo 200px e se ajusta para o tamanho da tela */
-    justify-content: space-between; /* Espaço igual entre as imagens */
+    justify-content: center; /* Centraliza as colunas */
+    justify-items: center; /* Centraliza cada item dentro das colunas */
     gap: 20px; /* Espaço entre as imagens */
     width: 80%;
     max-width: 900px;
@@ -92,7 +94,7 @@ main img {
     border-radius: 10px; /* Bordas arredondadas nas imagens */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra mais forte para dar destaque */
     border: 3px solid rgba(255, 255, 255, 0.8); /* Borda mais forte e mais visível */
-    background: rgba(0, 0, 0, 0.6); 
+    background: rgba(255, 255, 255, 0.4);
     padding: 10px;
 }
 footer {
