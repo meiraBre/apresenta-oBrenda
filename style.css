@@ -1,0 +1,144 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: linear-gradient(to right, #2962FF, #7B61FF);
+    color: white;
+    height: 60px;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+ul li {
+    white-space: nowrap;
+}
+ul li a {
+    color: white;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body { 
+    background: url('./assets/fotoFundo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Garante que ocupa a tela inteira */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo na tela */
+}
+main {
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; 
+    padding-bottom: 40px; /* Espaço extra antes do footer */
+
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin: 20px;
+}
+.foto {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    backdrop-filter: blur(8px); /* Efeito de desfoque */
+    width: 350px;
+}
+.sobreMim {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: row;
+    padding: 30px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.3); /* Fundo branco com 30% de transparência */
+    border-radius: 10px; /* Bordas arredondadas para um visual moderno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombras para destacar */
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco (opcional) */
+}
+.nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+h1 {
+    display: flex;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+button {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #fff; /* Borda de destaque branca */
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo transparente (30% de opacidade) */
+    color: white; /* Cor do texto */
+    font-weight: bold;
+    backdrop-filter: blur(5px); /* Efeito de desfoque de fundo (opcional) */
+    transition: all 0.3s ease; /* Transição suave */
+}
+button a{
+    color: black;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Aumenta a opacidade ao passar o mouse */
+    border-color: #2962FF; /* Muda a cor da borda ao passar o mouse */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+}
+
+footer {
+    background: linear-gradient(to right, #2962FF, #7B61FF);
+    color: white;
+    padding: 0;
+    height: 60px;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+}
