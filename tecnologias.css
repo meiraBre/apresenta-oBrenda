@@ -1,0 +1,69 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: linear-gradient(to right, #2962FF, #7B61FF);
+    color: white;
+    height: 60px;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+ul li {
+    white-space: nowrap;
+}
+ul li a {
+    color: white;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body { 
+    background: url('./assets/fotoFundo.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Garante que ocupa a tela inteira */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo na tela */
+}
+main {
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; 
+    padding-bottom: 40px; /* Espaço extra antes do footer */
+
+}
+footer {
+    background: linear-gradient(to right, #2962FF, #7B61FF);
+    color: white;
+    padding: 0;
+    height: 60px;
+    border: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+}
